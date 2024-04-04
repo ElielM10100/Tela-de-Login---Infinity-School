@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tela de Login - Infinity School</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Formulário de Registro -->
+    <form class="register-form" id="registerForm" style="display: none;">
+      <h2>Cadastro - Infinity School</h2>
+      <div class="input-group">
+        <label for="registerEmail">Email:</label>
+        <input type="email" id="registerEmail" name="registerEmail" required>
+      </div>
+      <div class="input-group">
+        <label for="registerSenha">Senha:</label>
+        <input type="password" id="registerSenha" name="registerSenha" required>
+      </div>
+      <button type="submit">Registrar</button>
+    </form>
+
+    <!-- Formulário de Login -->
+    <form class="login-form" id="loginForm">
+      <h2>Login - Infinity School</h2>
+      <div class="input-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <div id="emailError" class="error-message"></div>
+      </div>
+      <div class="input-group">
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        <div id="senhaError" class="error-message"></div>
+      </div>
+      <button type="submit">Entrar</button>
+    </form>
+    <a href="#" id="toggleRegister" class="forgot-password">Não tem uma conta? Cadastre-se aqui.</a>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
